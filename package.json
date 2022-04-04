@@ -1,22 +1,21 @@
 {
-  "name": "apps-script-starter",
-  "version": "10.8.1",
+  "name": "gcal-events-template",
+  "version": "0.1.0",
   "description": "Setup a local development environment for Google Apps Script with Visual Studio Code",
-  "author": "Amit Agarwal <amit@labnol.org> (https://www.labnol.org)",
-  "homepage": "https://digitalinspiration.com/",
+  "author": "Carl Liu <carl.z.liu@gmail.com> (https://carl.so)",
   "license": "MIT",
   "scripts": {
     "watch": "webpack --watch",
     "build": "webpack",
     "format": "prettier --write dist/code.js",
-    "postbuild": "npm run format",
-    "upload": "npx clasp push",
-    "deploy": "npm run build && npm run upload",
+    "postbuild": "yarn format",
+    "upload": "yarn clasp push",
+    "deploy": "yarn build && yarn upload",
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/labnol/apps-script-starter.git"
+    "url": "https://github.com/achristmascarl/gcal-event-template.git"
   },
   "keywords": [
     "google-apps-script",
